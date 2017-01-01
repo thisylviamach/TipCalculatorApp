@@ -26,7 +26,39 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let defaults = UserDefaults.standard
+        let defaultTip = defaults.double(forKey: "defaultTip")
+        
+        if defaultTip == 0.15{
+            tipControl.selectedSegmentIndex = 0
+        }
+        else if defaultTip == 0.2{
+            tipControl.selectedSegmentIndex = 1
+        }
+        else{
+            tipControl.selectedSegmentIndex = 2
+        }
+        calculateTip(tipControl)
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+    }
 
+    
     @IBAction func onTap(_ sender: AnyObject) {
         view.endEditing(true)
     }
