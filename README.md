@@ -28,7 +28,7 @@ User can choose how many people who want to split the bill, option from 1 to 5.
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/IFnujmC.gif' title ='Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
@@ -38,7 +38,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-Copyright [2016] [name of copyright owner]
+Copyright [2016] [Thi Mach]
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
